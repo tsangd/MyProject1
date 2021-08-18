@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page - GameProjectゲームのレビューサイトプロジェクト</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <!--HTML5 PAGE STRUCTURE-->
+  <!--<header> CONTRAINS BRANDINGS LIKE LOGOS-->
+  <!--<nav>  navigational section of the site-->
+  <!--<Article> The web page main content 
+    <section> divided section of main content x2-->
+  <!--<aside> contains extra info and related content and links-->
+  <!--<footer> copyright, provacy policy, terms of use-->
+  <!--FOR SEO(search engine optimisation H1 only for title (nothing else))-->
+  <body>
+    <!--HEADER TOPNAV start-->
+    <nav class="nav">
+      <div class="navMenu flexRow">
+        <div class="navLogo">
+          <a href="./index.html" class="companyLogo1"
+            ><img
+              src="./ICONS/companyLogo.png"
+              alt="img"
+              width="30%"
+              height="50%"
+          /></a>
+        </div>
+        <div>
+          <ul class="menuItems">
+            <li class="menuLinks">
+              <a href="./index.html"> 🏠ホーム </a>
+            </li>
+            <li class="menuLinks">
+              <a href="./registerPage.html">🖊️新規登録</a>
+            </li>
+            <li class="menuLinks">
+              <a href="./loginPage.html">🔑ログイン</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TOP NAV END-->
+    <hr class="line1" />
+    <!------------------------SEARCH BAR ---------------------->
+    <div>
+      <div class="searchBar">
+        <form>
+          <input
+            id="search"
+            name="search"
+            type="search"
+            placeholder="Gameproject内から検索"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <!-----------------------SEARCH BAR END ---------------->
+    </div>
+    <h1 class="searchText">
+      <span><b>Welcome to the best gaming review website in the world</b></span>
+    </h1>
+    <hr class="line1" />
+    <!-----------------------TOPNAV END--------------->
+
+    <!----------------NAV MENU---------------------->
+    <nav class="main">
+      <div class="mainMenuNav">
+        <div>
+          <ul class="mainMenuNavItems">
+            <li class="mainMenuLinks">
+              <a href="./index.html"> <b>Home page</b></a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./ps5main.html"> <b>Playstation 5</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./xboxMain.html"> <b>XBOX Series</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./nintendoMain.html"> <b>Nintendo switch</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./mobileMain.html"><b>Mobile Apps</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./gamingNewsMain.html"><b>Gaming news</b> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!----------------- END NAV MENU---------------->
+    <hr class="line1" />
+    <!--------------------LOGIN START---------------->
+    <h3>Login page</h3>
+    <div class="loginColumn">
+      <form>
+        <div class="loginContainer">
+          <!-----------EMAIL/USERNAME FORM------------>
+          <label for="email" for="user"
+            ><span style="left: 50px"><b>Username / Email</b></span></label
+          >
+          <br />
+          <input
+            type="email"
+            type="text"
+            name="emailAddress, userName"
+            placeholder="Username/E-mail address"
+            required
+          />
+          <br /><br />
+          <!-----------END EMAIL/USERNAME FORM------------>
+          <!-----------PASSWORD FORM--------->
+          <label for="password"><b>Password</b></label>
+          <br />
+          <input type="password" name="psw" placeholder="Password" required />
+          <br /><br />
+          <p>
+            Forgot your password?<br />
+            <a href="./index.html">Click here to reset your password.</a>
+          </p>
+          <div>
+            <a href="./index.html"
+              ><button type="submit" class="loginButton">Login</button></a
+            >
+          </div>
+          <p>
+            Make an account by
+            <a href="./registerPage.html"> clicking here</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <!------------------- LOGIN END------------------->
+    <!------------------------FOOTER-------------------------->
+    <footer>
+      <p>
+        <span style="color: rgb(141, 139, 139)">
+          &copy; Gaming project . All rights reserved by Daniel Tsang
+        </span>
+      </p>
+    </footer>
+    <!---------------------FOOTER END--------------------->
+  </body>
+</html>

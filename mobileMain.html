@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Main Page</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <!--HTML5 PAGE STRUCTURE-->
+  <!--<header> CONTRAINS BRANDINGS LIKE LOGOS-->
+  <!--<nav>  navigational section of the site-->
+  <!--<Article> The web page main content 
+    <section> divided section of main content x2-->
+  <!--<aside> contains extra info and related content and links-->
+  <!--<footer> copyright, provacy policy, terms of use-->
+  <!--FOR SEO(search engine optimisation H1 only for title (nothing else))-->
+  <body>
+    <!--HEADER TOPNAV start-->
+    <nav class="nav">
+      <div class="navMenu flexRow">
+        <div class="navLogo">
+          <a href="index.html" class="companyLogo1"
+            ><img
+              src="./ICONS/companyLogo.png"
+              alt="img"
+              width="30%"
+              height="50%"
+          /></a>
+        </div>
+        <div>
+          <ul class="menuItems">
+            <li class="menuLinks">
+              <a href="./index.html"> 🏠ホーム </a>
+            </li>
+            <li class="menuLinks">
+              <a href="./registerPage.html">🖊️新規登録</a>
+            </li>
+            <li class="menuLinks">
+              <a href="./loginPage.html">🔑ログイン</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TOP NAV END-->
+    <hr class="line1" />
+    <!------------------------SEARCH BAR ---------------------->
+    <div>
+      <div class="searchBar">
+        <form>
+          <input
+            id="search"
+            name="search"
+            type="search"
+            placeholder="Gameproject内から検索"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <!-----------------------SEARCH BAR END ---------------->
+    </div>
+    <h1 class="searchText">
+      <span><b>Welcome to the best gaming review website in the world</b></span>
+    </h1>
+    <hr class="line1" />
+    <!-----------------------TOPNAV END--------------->
+
+    <!----------------NAV MENU---------------------->
+    <nav class="main">
+      <div class="mainMenuNav">
+        <div>
+          <ul class="mainMenuNavItems">
+            <li class="mainMenuLinks">
+              <a href="./index.html"> <b>Home page</b></a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./ps5main.html"> <b>Playstation 5</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./xboxMain.html"> <b>XBOX Series</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./nintendoMain.html"> <b>Nintendo switch</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./mobileMain.html"><b>Mobile Apps</b> </a>
+            </li>
+            <li class="mainMenuLinks">
+              <a href="./gamingNewsMain.html"><b>Gaming news</b> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!----------------- END NAV MENU---------------->
+    <hr class="line1" />
+    <!------------------------ARTICLE START--------------->
+    <div class="main">
+      <!----------------------LEFT COLUMN------------------->
+      <div class="column">
+        <ul class="sideMenu">
+          <h2>Monthly popular games</h2>
+          <li class="sideMenuLinks">
+            <a href="./arcadeGameMain.html"> Mobile App - Arcade Game</a>
+          </li>
+          <hr class="line3" />
+          <li class="sideMenuLinks">
+            <a href="./marioGameMain.html"> Mobile App - Mario Game</a>
+          </li>
+          <hr class="line3" />
+          <li class="sideMenuLinks">
+            <a href="./twoPlayGameMain.html">Mobile App- 2 player game</a>
+          </li>
+          <hr class="line3" />
+          <li class="sideMenuLinks">
+            <a href="./cardGameMain.html">Mobile App - Card Game</a>
+          </li>
+        </ul>
+      </div>
+      <!---------------------- END LEFT COLUMN------------------->
+      <!----------------------MIDDLE COLUMN------------------->
+      <div class="column">
+        <h2>Mobile Game Of The Month</h2>
+        <iframe
+          class="e3Video"
+          src="https://www.youtube.com/embed/UFICXRnwPxI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+        <p>
+          DRAGON BALL Z DOKKAN BATTLE is the one of the best DRAGON BALL mobile
+          game experiences available. This DB anime action puzzle game features
+          beautiful 2D illustrated visuals and animations set in a DRAGON BALL
+          world where the timeline has been thrown into chaos, where DB
+          characters from the past and present come face to face in new and
+          exciting battles! Experience the new story and save the world of
+          DRAGON BALL!
+        </p>
+      </div>
+
+      <!---------------------- END MIDDLE COLUMN------------------->
+    </div>
+    <!------------------------END ARTICLE------------------->
+
+    <!------------------------FOOTER-------------------------->
+    <footer>
+      <p>
+        <span style="color: rgb(141, 139, 139)">
+          &copy;Gaming project . All rights reserved by Daniel Tsang
+        </span>
+      </p>
+    </footer>
+    <!---------------------FOOTER END--------------------->
+  </body>
+</html>

@@ -1,0 +1,633 @@
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;
+  padding-right: 50px;
+  padding-left: 55px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: white url(/IMAGES/gaming-pattern.png) no-repeat right top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2 {
+  border: solid silver;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: lighter;
+  font-style: bold;
+
+  text-align: center;
+}
+h3 {
+  border-bottom: groove silver;
+  padding: 5px;
+  margin: auto; /* This will center the border. */
+  width: 25%; /* Change this to whatever width you want. */
+  font-weight: lighter;
+  font-style: bold;
+  font-size: 1.5rem;
+
+  text-align: center;
+}
+h4 {
+  font-size: 1.3rem;
+  position: relative;
+  margin-top: -10px;
+  margin-right: 10px;
+  right: 30px;
+}
+h5 {
+  border: solid silver;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  position: relative;
+  margin-top: -3px;
+  margin-right: 10px;
+
+  width: 35.4rem;
+  height: 2rem;
+
+  padding: -10px;
+
+  background-color: rgb(224, 221, 221);
+
+  border: groove;
+  text-align: center;
+}
+.gameNav {
+  /*USED FOR GAME GUIDES NAV */
+  font-size: 14;
+  position: relative;
+  top: 290px;
+  left: 170px;
+}
+/*-------------Global class-----------*/
+a {
+  text-decoration: none;
+}
+a :link {
+  color: rgb(85, 153, 175);
+}
+a:visited {
+  color: rgb(85, 153, 175);
+}
+
+a:hover {
+  color: #9acada;
+}
+a:active {
+  color: rgb(85, 153, 175);
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*The social icon cloppases using wrap*/
+}
+ul {
+  list-style-type: none;
+}
+hr.line1 {
+  border-top: 1px solid silver;
+}
+hr.line2 {
+  border-top: 1px solid silver;
+  position: relative;
+  width: 250px;
+  margin-left: 0px;
+}
+
+hr.line3 {
+  position: relative;
+  width: 180px;
+  margin-left: 0px;
+  border: dotted;
+  border-color: silver;
+  border-width: 0.5px;
+}
+hr.line4 {
+  position: relative;
+  width: 230px;
+  margin-left: -40px;
+  margin-top: -10px;
+  border: groove;
+  border-color: silver;
+  border-width: 0.5px;
+}
+span {
+  cursor: default;
+}
+iframe {
+  border: groove 1px;
+  width: 360px;
+  height: 300px;
+}
+iframe-e3video {
+  position: relative;
+  width: 100%;
+}
+
+/*-------------End Global class-----------*/
+/*----------------TopMenu--------------*/
+.navMenu {
+  background-color: white;
+}
+.navMenu .companyLogo1 img {
+  padding: 1rem 0;
+  margin-left: 100px;
+  margin-top: 5px;
+  display: block;
+}
+.nav.navMenu {
+  justify-content: space-between;
+}
+.navMenu .menuItems {
+  display: flex; /*Makes it horizontal when screen is squished*/
+  margin: 0px;
+  margin-left: 230px;
+  margin-top: 20px;
+}
+.menuItems li {
+  border-right: 1px solid silver;
+  border-left: 1px solid silver;
+}
+
+.navMenu .menuItems .menuLinks {
+  font-size: 15px;
+  padding: 0.7rem;
+}
+/*---------------- End TopMenu--------------*/
+/*-----------------SEARCH BAR-----------------*/
+.searchBar {
+  float: right;
+  padding: 1rem;
+  margin-right: 7rem;
+  margin-bottom: -2rem;
+}
+.searchText {
+  text-align: left;
+  margin-top: 0rem;
+  margin-left: 3rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+/*-----------------END SEARCH BAR-----------------*/
+/*-----------------NAV MENU----------------------*/
+.mainMenuNav {
+  justify-content: space-between;
+  text-align: center;
+}
+.mainMenuNavItems {
+  display: flex; /*Makes it horizontal when screen is squished*/
+}
+.mainMenuLinks {
+  font-size: 0.9rem;
+  margin-left: 4rem;
+}
+.mainMenuNavItems ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.mainMenuNavItems li {
+  /*Gives the borders lines between each link*/
+  border-right: 1px solid silver;
+  border-left: 1px solid silver;
+}
+.mainMenuLinks a {
+  /*Blocks the nav items*/
+  display: block;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+}
+.mainMenuLinks a :link {
+  color: black;
+}
+.mainMenuLinks a:visited {
+  color: black;
+}
+
+.mainMenuLinks a:hover:not(.active) {
+  /* When hovered the background is silver*/
+  background-color: silver;
+}
+.mainMenuLinks a:active {
+  color: black;
+}
+/*----------------- END NAV MENU----------------*/
+
+/*-----------------ARTICLE COLUMNS------------*/
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+
+.registerColumn {
+  position: relative;
+  width: 95%;
+  margin-right: -100px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+.loginColumn {
+  position: relative;
+  width: 95%;
+  margin-right: -50px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*------------------LEFT COLUMN-----------------------*/
+.sideMenu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  background-color: none;
+}
+.sideMenu li a {
+  display: block;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+/*------------------END LEFT COLUMN-----------------------*/
+/*------------------MIDDLE COLUMN-----------------------*/
+.middleMenu {
+  display: flex; /*MAKES THE ITEMS HORIZONTAL!!*/
+}
+.middleMenuNav {
+  background-color: none;
+  justify-content: space-between;
+  border-top: groove;
+  border-left: groove;
+  border-right: groove;
+  border-bottom: groove;
+  margin: -2px;
+}
+.middleMenuGames li {
+  display: block;
+}
+.middlegameImage1 {
+  width: 75%;
+  height: 75%;
+  margin: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.middlegameImage1:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/*------------------END MIDDLE COLUMN-----------------------*/
+/*------------------ RIGHT COLUMN-----------------------*/
+
+.RightHomeImage1 {
+  border: groove;
+  width: 100%;
+  height: 100%;
+}
+/*------------------END RIGHT COLUMN-----------------------*/
+/*-----------------ARTICLES COLUMNS END--------*/
+
+/*----------------FOOTER----------------------*/
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+/*------------------FOOTER END--------------*/
+
+/*REGISTER PAGE*/
+.container {
+  padding: 0.5px;
+}
+
+/* input fields */
+input[type="email"],
+input[type="name"],
+input[type="password"],
+input[type="password"] {
+  width: 20%;
+  padding: 5px;
+  margin: 5px 5px 5px 1px;
+  display: inline-block;
+  border: groove;
+  background: #f1f1f1;
+}
+input[class="searchBarGame1"] {
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 25%;
+  outline: 0;
+  background-color: #f5f5f5;
+
+  position: absolute;
+  top: 250px;
+  right: 260px;
+}
+input[id="searchButton"] {
+  position: absolute;
+  top: 250px;
+  right: 240px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 5%;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.signupButton {
+  background-color: #086608;
+  color: white;
+
+  padding: 10px 20px;
+  margin: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 20%;
+
+  opacity: 0.8;
+}
+.signupButton:hover {
+  opacity: 1;
+}
+.signUp a {
+  text-decoration: none;
+}
+.signUp a:link {
+  color: rgba(255, 255, 255, 0.719);
+}
+.signUp a:visited {
+  color: rgba(255, 255, 255, 0.719);
+}
+.signUp a:hover {
+  color: rgba(255, 255, 255, 0.719);
+}
+.signUp a:active {
+  color: rgba(255, 255, 255, 0.719);
+}
+/*-----------------LOGIN PAGE------------------*/
+
+.loginButton {
+  background-color: #086608;
+  color: white;
+
+  padding: 10px 15px;
+  margin: 20px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 20%;
+
+  opacity: 0.8;
+}
+.loginButton :hover {
+  opacity: 1;
+}
+.loginContainer {
+  padding: 20px;
+}
+/*-----------------END LOGIN PAGE------------------*/
+/*Mobile News Column*/
+.mobileRightColumn {
+  float: left;
+  width: 55%;
+  position: relative;
+  padding: 10px 2px;
+  text-align: center;
+}
+/*END MOBILE COLUMN*/
+/*----------------gameMainGame page---------------*/
+.searchBarGame {
+  position: relative;
+  margin-right: -100px;
+  display: flex;
+  min-width: 100px;
+  font-family: Font;
+}
+.gameText {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+
+.gameMainText {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 250px;
+  left: 240px;
+
+  font-size: 20px;
+}
+.gameMainIcon {
+  z-index: inherit;
+  position: absolute;
+  top: -13px;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+}
+.gameMain a {
+  color: white;
+  text-decoration: none;
+}
+.gameMain a:link {
+  color: rgb(255, 255, 255);
+}
+.gameMain a:visited {
+  color: rgb(255, 255, 255);
+}
+.gameMain a:hover {
+  color: rgb(255, 255, 255);
+}
+.gameMain a:active {
+  color: rgb(255, 255, 255);
+}
+.gameMainBack {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+.gameMainBackground {
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+  right: 95px;
+  object-fit: cover;
+}
+.gameMenuNav {
+  z-index: 1;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+
+  width: 898px;
+  height: 68px;
+  top: 290px;
+  left: 162px;
+  border: groove;
+  background-color: rgba(211, 210, 210, 0.493);
+}
+.gameNavItems {
+  display: flex;
+  position: relative;
+  top: -10px;
+}
+.gameNavItems ul {
+  list-style-type: none;
+  margin: 50px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+.gameNavItems li {
+  display: inline;
+  float: left;
+  border-left: solid 1px black;
+
+  /*By default, 
+  <li> elements are block elements. 
+  Here, we remove the line breaks before and after each list item, 
+  to display them on one line*/
+}
+
+.gameNavItems li:last-child {
+  border-right: solid 1px black;
+}
+.gameLinks a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.gameLinks a :link {
+  color: black;
+}
+.gameLinks a:visited {
+  color: black;
+}
+
+.gameLinks a:hover {
+  background-color: silver;
+}
+.active {
+  background-color: red;
+}
+.gameLinks a:active {
+  color: black;
+}
+
+/*------------------LEFT COLUMN-----------------------*/
+.gameLeftColumn {
+  float: left;
+  width: 20%;
+  position: relative;
+  margin-top: 18rem;
+  margin-left: 10.1rem;
+  padding: 10px 2px;
+  background-color: rgb(199, 199, 199);
+  border: groove;
+  text-align: left;
+}
+.gameSideMenu ul {
+  list-style-type: none;
+  margin: 0px;
+  width: 200px;
+  background-color: none;
+}
+.gameTitle {
+  display: block;
+  position: relative;
+  top: 5px;
+  right: 32px;
+  padding-bottom: -20px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.gameSideMenu li a {
+  display: block;
+  position: relative;
+  width: 118.3%;
+  margin-top: px;
+  right: 42.5px;
+  padding: 20px 5px;
+  background-color: white;
+  text-decoration: none;
+  text-align: left;
+  border-top: 1px groove;
+}
+.gameSideMenu li a:last-child {
+  border-bottom: 1px groove;
+}
+
+/*------------------END LEFT COLUMN-----------------------*/
+/*------------------RIGHT COLUMN-----------------------*/
+.gameRightColumn {
+  font-size: larger;
+  float: left;
+  width: 35%;
+  position: relative;
+  margin-top: 17.5rem;
+  margin-left: -11rem;
+  padding: 10px 215px;
+  text-align: left;
+}
+/*------------------END RIGHT COLUMN-----------------------*/
+/*----------------END arcadeMainGame page---------------*/
+/*GamingNews1 page*/
+.newsImage {
+  border: groove;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: 19rem;
+}
+.leagueImage figcaption {
+  text-align: center;
+  font-size: 10px;
+}
+/*GamingNews 1 page END*/
+/*-------------FOOTER----------*/
+.footerText {
+  z-index: -1;
+  position: relative;
+  top: 2000px;
+  right: 150px;
+  text-align: center;
+}

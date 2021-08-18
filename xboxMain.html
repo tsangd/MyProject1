@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XBOX Main page</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <!--HTML5 PAGE STRUCTURE-->
+  <!--<header> CONTRAINS BRANDINGS LIKE LOGOS-->
+  <!--<nav>  navigational section of the site-->
+  <!--<Article> The web page main content 
+    <section> divided section of main content x2-->
+  <!--<aside> contains extra info and related content and links-->
+  <!--<footer> copyright, provacy policy, terms of use-->
+  <!--FOR SEO(search engine optimisation H1 only for title (nothing else))-->
+  <body>
+    <!--HEADER TOPNAV start-->
+    <nav class="nav">
+      <div class="navMenu flexRow">
+        <div class="navLogo">
+          <a href="./mainPage.html" class="companyLogo1"
+            ><img
+              src="./ICONS/companyLogo.png"
+              alt="img"
+              width="30%"
+              height="50%"
+          /></a>
+        </div>
+        <div>
+          <ul class="menuItems">
+            <li class="menuLinks"><a href="./mainPage.html"> 🏠ホーム </a></li>
+            <li class="menuLinks">
+              <a href="./registerPage.html">🖊️新規登録</a>
+            </li>
+            <li class="menuLinks"><a href="./loginPage.html">🔑ログイン</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TOP NAV END-->
+    <hr class="line1" />
+    <!------------------------SEARCH BAR ---------------------->
+    <div>
+      <div class="searchBar">
+        <form>
+          <input
+            id="search"
+            name="search"
+            type="search"
+            placeholder="Gameproject内から検索"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <!-----------------------SEARCH BAR END ---------------->
+    </div>
+    <h1 class="searchText">
+      <span><b>Welcome to the best gaming review website in the world</b></span>
+    </h1>
+    <hr class="line1" />
+    <!-----------------------TOPNAV END--------------->
+
+    <!----------------NAV MENU---------------------->
+    <nav class="main">
+        <div class="mainMenuNav">
+          <div>
+            <ul class="mainMenuNavItems">
+              <li class="mainMenuLinks">
+                <a href="./mainPage.html"> <b>Home page</b></a>
+              </li>
+              <li class="mainMenuLinks">
+                <a href="./ps5main.html"> <b>Playstation 5</b> </a>
+              </li>
+              <li class="mainMenuLinks">
+                <a href="./xboxMain.html"> <b>XBOX Series</b> </a>
+              </li>
+              <li class="mainMenuLinks">
+                <a href="./nintendoMain.html"> <b>Nintendo switch</b> </a>
+              </li>
+              <li class="mainMenuLinks">
+                <a href="./mobileMain.html"><b>Mobile Apps</b> </a>
+              </li>
+              <li class="mainMenuLinks">
+                <a href="./gamingNewsMain.html"><b>Gaming news</b> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!----------------- END NAV MENU---------------->
+    <hr class="line1" />
+    
+    <!------------------------ARTICLE START--------------->
+    <div class="main">
+      <!----------------------LEFT COLUMN------------------->
+      <div class="column">
+        <ul class="sideMenu">
+          <h2>Monthly popular games</h2>
+          <li class="sideMenuLinks">
+            <a href="./arcadeGameMain.html"> Xbox Series X - Arcade Game</a>
+          </li>
+          <hr class="line3" />
+          <li class="sideMenuLinks">
+            <a href="./consoleGameMain.html"> Xbox Series X  - Console Game</a>
+          </li>
+          <hr class="line3" />
+          <li class="sideMenuLinks">
+            <a href="./twoPlayGameMain.html">Xbox Series X  - CO-OP Game</a>
+          </li>
+          <hr class="line3" />
+          <li class="sideMenuLinks">
+            <a href="./cardGameMain.html">Xbox Series X - Card Game</a>
+          </li>
+        </ul>
+      </div>
+      <!---------------------- END LEFT COLUMN------------------->
+      <!----------------------MIDDLE COLUMN------------------->
+        <div class="column">
+        <h2>Xbox Series X launch trailer</h2>
+
+        <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/0tUqIHwHDEc" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <p>
+            The Xbox Series X is a home video game console that 
+            was developed by Microsoft. It was initally released on November 10, 
+            2020 as the fourth generation of the Xbox console, 
+            succeeding the Xbox One family. 
+            <br><br>
+            The Xbox Series X has higher end hardware, and 
+            supports higher display resolutions (up to 8K resolution) 
+            along with higher frame rates. 
+            <br> <br>
+            It also includesreal-time ray tracing; on top of that it has a 
+            high-speed solid-state drive to reduce loading times. 
+            <br><br>
+            The less expensive Xbox Series S uses the same CPU, 
+            but has a less powerful GPU, has less memory and internal storage, 
+            and lacks an optical drive.
+            <br> <br>
+            Both consoles are backwards compatible with many previous generation 
+            Xbox games, controllers, and accessories. 
+        </p>
+
+      </div>
+      
+      <!---------------------- END MIDDLE COLUMN------------------->
+      <!---------------------- START RIGHT COLUMN------------------->
+      <div class="column">
+        <h2>This months popular games</h2>
+        <!------FIRST MIDDLE ROW------------->
+        <div class="middleMenuNav">
+          <ul class="middleMenu">
+            <li class="middleMenuGames">
+              <a href="./arcadeGameMain.html"
+                ><img
+                  class="middlegameImage1"
+                  src="./ICONS/arcade.png"
+                  alt="none"
+                />
+                <figcaption>Arcade game</figcaption></a
+              >
+            </li>
+            <li class="middleMenuGames">
+              <a href="./computerGameMain.html"
+                ><img
+                  class="middlegameImage1"
+                  src="./ICONS/computer-game.png"
+                  alt="none"
+                />
+                <figcaption>Computer game</figcaption></a
+              >
+            </li>
+            <li class="middleMenuGames">
+              <a href="./consoleGameMain.html"
+                ><img
+                  class="middlegameImage1"
+                  src="./ICONS/game-controller.png"
+                  alt="none"
+                />
+                <figcaption>Console game</figcaption></a
+              >
+            </li>
+          </ul>
+        </div>
+        <!---------    SECOND   MIDDLE ROW   ------------->
+        <div class="middleMenuNav">
+          <ul class="middleMenu">
+            <li class="middleMenuGames">
+              <a href="./twoPlayGameMain.html"
+                ><img
+                  class="middlegameImage1"
+                  src="./ICONS/gaming-commentator.png"
+                  alt="none"
+                />
+                <figcaption>2-player game</figcaption></a
+              >
+            </li>
+            <li class="middleMenuGames">
+              <a href="./marioGameMain.html"
+                ><img
+                  class="middlegameImage1"
+                  src="./ICONS/mushroom.png"
+                  alt="none"
+                />
+                <figcaption>Mario game</figcaption></a
+              >
+            </li>
+            <li class="middleMenuGames">
+              <a href="./cardGameMain.html"
+                ><img
+                  class="middlegameImage1"
+                  src="./ICONS/gambling.png"
+                  alt="none"
+                />
+                <figcaption>Card games</figcaption></a
+              >
+            </li>
+          </ul>
+        </div>
+        <!---------    END SECOND   MIDDLE ROW   ------------->
+        <!---------    THIRD   MIDDLE ROW   ------------->
+        <div class="middleMenuNav">
+          <ul class="middleMenu">
+            <li class="middleMenuGames">
+              <img
+                  class="middlegameImage1"
+                  src="./ICONS/minecraft.png"
+                  alt="none"
+                />
+                <figcaption>TBA</figcaption>
+            </li>
+            <li class="middleMenuGames">
+              <img
+                  class="middlegameImage1"
+                  src="./ICONS/poker-table.png"
+                  alt="none"
+                />
+                <figcaption>TBA</figcaption>
+            </li>
+            <li class="middleMenuGames">
+              <img
+                  class="middlegameImage1"
+                  src="./ICONS/gaming.png"
+                  alt="none"
+                />
+                <figcaption>TBA</figcaption>
+            </li>
+          </ul>
+        </div>
+        <!---------  END  THIRD   MIDDLE ROW   ------------->
+      </div>
+    <!------------------------END ARTICLE------------------->
+
+    <!------------------------FOOTER-------------------------->
+    <footer>
+        <p><span style="color: rgb(141, 139, 139)">
+             &copy;Gaming project . All rights reserved by Daniel Tsang
+        </span></p>
+      </footer>
+    <!---------------------FOOTER END--------------------->
+  </body>
+</html>
